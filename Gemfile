@@ -46,6 +46,9 @@ group :development, :test do
   # Start debugger with binding.b [https://github.com/ruby/debug]
   gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
 
+  # Use factory_bot for fixtures
+  gem "factory_bot_rails", "~> 6.2"
+
   # Use RSpec to test the application
   gem "rspec-rails", "~> 5.0.0"
 end
