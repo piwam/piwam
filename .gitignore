@@ -29,3 +29,6 @@
 
 # Ignore RubyMine's settings files
 /.idea
+
+# Ignore SimpleCov's code coverage reports
+/coverage/*
