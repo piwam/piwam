@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Label:</strong>
+  <%= @status.label %>
+</p>
+
+<div>
+  <%= link_to 'Edit this status', edit_admin_status_path(@status) %> |
+  <%= link_to 'Back to statuses', admin_statuses_path %>
+
+  <%= button_to 'Destroy this status', admin_status_path(@status), method: :delete %>
+</div>

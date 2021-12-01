@@ -1,0 +1,10 @@
+<h1>Editing status</h1>
+
+<%= render 'form', status: @status %>
+
+<br>
+
+<div>
+  <%= link_to 'Show this status', [:admin, @status] %> |
+  <%= link_to 'Back to statuses', admin_statuses_path %>
+</div>
