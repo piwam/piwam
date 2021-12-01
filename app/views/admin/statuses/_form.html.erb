@@ -1,5 +1,5 @@
 <%= form_with(model: [:admin, status]) do |form| %>
-  <%= render 'error_messages', target: status %>
+  <%= render 'admin/base/error_messages', target: status %>
 
   <div class="field">
     <%= form.label :label %>
