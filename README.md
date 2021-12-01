@@ -1,6 +1,6 @@
 # Piwam
 
-[![Codeship](https://app.codeship.com/projects/e1941315-6279-4199-a5e9-25f1ed8d7423/status?branch=master)](https://app.codeship.com/projects/453936)
+[![Codeship](https://app.codeship.com/projects/e1941315-6279-4199-a5e9-25f1ed8d7423/status?branch=main)](https://app.codeship.com/projects/453936)
 
 **P**iwam **I**s a **W**onderful **A**ssociation **M**anager.
 
