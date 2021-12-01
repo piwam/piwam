@@ -2,6 +2,7 @@
 
 [![Codeship](https://app.codeship.com/projects/e1941315-6279-4199-a5e9-25f1ed8d7423/status?branch=main)](https://app.codeship.com/projects/453936)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9c05e269767ea2218a14/maintainability)](https://codeclimate.com/github/piwam/piwam/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9c05e269767ea2218a14/test_coverage)](https://codeclimate.com/github/piwam/piwam/test_coverage)
 
 **P**iwam **I**s a **W**onderful **A**ssociation **M**anager.
 
