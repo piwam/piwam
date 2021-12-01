@@ -1,4 +1,4 @@
-class Admin::StatusesController < ApplicationController
+class Admin::StatusesController < Admin::BaseController
   before_action :set_status, only: %i[show edit update destroy]
 
   def index
