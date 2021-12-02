@@ -2,5 +2,157 @@
 
 ---
 
-@import variables
-@import bulma/bulma
+@import fonts
+@import breakpoints
+
+html
+  box-sizing: border-box
+
+*
+  &,
+  &::before,
+  &::after
+    box-sizing: inherit
+
+body
+  margin: 0
+  background-color: #fafafa
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif
+  font-size: 16px
+  color: #666
+
+#header-wrapper
+  background: #86a800 url("../images/header-bg.png") center no-repeat
+  padding: 1.5em 0
+  font-family: 'Architects Daughter', cursive
+
+#header
+  padding: 0 30px
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  +tablet
+    max-width: 960px
+    margin: 0 auto
+    justify-content: space-between
+    flex-direction: row
+
+  h1
+    font-size: 75px
+    font-weight: normal
+    color: #fff
+    margin: 0
+
+    +tablet
+      font-size: 80px
+
+    +desktop
+      font-size: 90px
+
+    img
+      max-height: 80px
+      vertical-align: middle
+
+      +tablet
+        max-height: 100px
+
+      +desktop
+        max-height: 116px
+
+  h2
+    font-size: 20px
+    font-weight: normal
+    color: #98c326
+    margin: 5px 0 0 0
+
+    +tablet
+      font-size: 24px
+
+    +desktop
+      font-size: 26px
+
+  .github-button
+    background: transparent url("../images/github-button.png") 0 0 no-repeat
+    width: 202px
+    height: 80px
+    margin-top: 20px
+    padding: 13px 0 0 76px
+    font-size: 23px
+    line-height: 1.2
+    color: #fff
+    text-decoration: none
+
+#content-wrapper
+  padding: 20px 30px
+  margin: 0 auto
+
+  +tablet
+    display: flex
+    max-width: 960px
+
+  p
+    margin: 0 0 20px 0
+    font-weight: 400
+    line-height: 1.5
+
+  a
+    color: #85aa00
+    text-decoration: none
+
+  img
+    max-width: 100%
+
+#content
+
+  +tablet
+    padding-right: 60px
+    flex-grow: 1
+
+  h3
+    font-family: 'Architects Daughter', cursive
+    font-size: 20px
+    color: #474747
+    font-weight: bold
+    margin-top: 24px
+    margin-bottom: 12px
+
+    &::before
+      padding-right: 0.3em
+      content: "///"
+      color: #7a9c00
+
+  ul
+    margin-bottom: 30px
+
+  pre
+    padding: 20px
+    overflow: auto
+    text-shadow: none
+    background: #fff
+    border: solid 1px #f2f2f2
+    margin-bottom: 20px
+
+    code
+      color: #85aa00
+      background-color: #ffffff
+
+#sidebar
+  font-size: 12px
+  line-height: 1rem
+  border-top: solid 1px #ccc
+
+  +tablet
+    border: none
+    background: url("../images/sidebar-bg.jpg") top left no-repeat
+    padding-left: 20px
+    flex-shrink: 0
+    flex-basis: 21%
+
+  +desktop
+    flex-basis: 200px
+
+  h3
+    font-size: 14px
+    font-weight: bold
+    margin: 20px 0
