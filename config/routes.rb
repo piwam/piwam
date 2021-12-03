@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   namespace :admin do
     resources :statuses
-  end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  # Almost every application defines a route for the root path ("/") at the top of this file.
-  # root "articles#index"
+    root 'statuses#index'
+  end
+
+  root 'index#index'
 end

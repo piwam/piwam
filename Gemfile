@@ -37,7 +37,7 @@ gem "bootsnap", ">= 1.4.4", require: false
 # gem "bcrypt", "~> 3.1.7"
 
 # Use Sass to process CSS
-# gem "sassc-rails", "~> 2.1"
+gem "sassc-rails", "~> 2.1"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"

@@ -1,0 +1,125 @@
+.button
+  -moz-appearance: none
+  -webkit-appearance: none
+  -webkit-font-smoothing: antialiased
+  align-items: center
+  background-color: white
+  border-radius: 4px
+  border: 1px solid #dbdbdb
+  box-shadow: none
+  box-sizing: border-box
+  color: #363636
+  cursor: pointer
+  display: inline-flex
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  font-size: 1rem
+  font-weight: 400
+  height: 2.5em
+  justify-content: center
+  line-height: 1.5
+  margin: 0
+  padding: calc(0.5em - 1px) 1em
+  position: relative
+  text-align: center
+  text-decoration: none
+  user-select: none
+  vertical-align: top
+  white-space: nowrap
+
+  &:hover
+    border-color: #b5b5b5
+    color: #363636
+
+  &:focus
+    border-color: #3273dc
+    color: #363636
+    outline: none
+
+    &:not(:active)
+      box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25)
+
+  &:active
+    border-color: #4a4a4a
+    color: #363636
+    outline: none
+
+  &.is-text
+    background-color: transparent
+    border-color: transparent
+    color: #4a4a4a
+    text-decoration: underline
+
+    &:hover
+      background-color: whitesmoke
+      color: #363636
+
+    &:focus
+      background-color: whitesmoke
+      color: #363636
+
+    &:active
+      background-color: #e8e8e8
+      color: #363636
+
+    &[disabled]
+      background-color: transparent
+      border-color: transparent
+      box-shadow: none
+
+  &.is-primary
+    background-color: #00d1b2
+    border-color: transparent
+    color: #fff
+
+    &:hover
+      background-color: #00c4a7
+      border-color: transparent
+      color: #fff
+
+    &:focus
+      border-color: transparent
+      color: #fff
+
+      &:not(:active)
+        box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25)
+
+    &:active
+      background-color: #00b89c
+      border-color: transparent
+      color: #fff
+
+  &.is-fullwidth
+    display: flex
+    width: 100%
+
+  &[disabled]
+    cursor: not-allowed
+    background-color: white
+    border-color: #dbdbdb
+    box-shadow: none
+    opacity: 0.5
+
+  &.is-rounded
+    border-radius: 290486px
+    padding-left: calc(1em + 0.25em)
+    padding-right: calc(1em + 0.25em)
+
+  .icon
+    &,
+    &.is-small,
+    &.is-medium,
+    &.is-large
+      height: 1.5em
+      width: 1.5em
+
+    &:first-child:not(:last-child)
+      margin-left: calc(-0.5em - 1px)
+      margin-right: 0.25em
+
+    &:last-child:not(:first-child)
+      margin-left: 0.25em
+      margin-right: calc(-0.5em - 1px)
+
+    &:first-child:last-child
+      margin-left: calc(-0.5em - 1px)
+      margin-right: calc(-0.5em - 1px)
