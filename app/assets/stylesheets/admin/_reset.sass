@@ -1,0 +1,57 @@
+// Blocks
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+hr
+  margin: 0
+  padding: 0
+
+// List
+ul
+  list-style: none
+
+// Form
+button,
+input,
+select,
+textarea
+  margin: 0
+
+// Box sizing
+html
+  box-sizing: border-box
+
+*
+  &,
+  &::before,
+  &::after
+    box-sizing: inherit
+
+// Media
+img,
+video
+  height: auto
+  max-width: 100%
+
+// Table
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+td,
+th
+  padding: 0
+  &:not([align])
+    text-align: inherit

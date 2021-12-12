@@ -1,2 +1,156 @@
-body
-  background-color: #CCCCCC
+@import reset
+@import typography
+@import mixins
+
+
+// Container
+// ----------------------------------------------------------------------------
+
+#container
+  margin: 0 auto
+
+  +desktop
+    max-width: 960px
+
+// Header
+// ----------------------------------------------------------------------------
+
+#header
+  background-color: #0671b6
+  color: #fff
+  border: solid 10px #fff
+  padding: 8px 16px
+  display: flex
+
+  h1
+    font-size: 20px
+    font-weight: bold
+    line-height: 36px
+
+  #btn-show-sidebar
+    color: #fff
+    border-radius: 3px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    margin-right: 8px
+    width: 36px
+    height: 36px
+
+    +desktop
+      display: none
+
+    &:hover
+      background-color: #0660a2
+
+
+// Sidebar
+// ----------------------------------------------------------------------------
+
+#sidebar
+  position: fixed
+  display: flex
+  flex-direction: column
+  top: 0
+  left: 0
+  bottom: 0
+  background-color: #fff
+  width: calc(100vw - 60px)
+  min-width: 240px
+  max-width: 360px
+  border-right: 1px solid rgba(0, 0, 0, 0.2)
+  z-index: 2
+  transform: translateX(-100%)
+  transition: transform 0.3s ease-in-out
+
+  +desktop
+    position: static
+    transform: translateX(0)
+    transition: none
+    flex-basis: 340px
+    flex-grow: 0
+    flex-shrink: 0
+    border-right: none
+
+  &.visible
+    transform: translateX(0)
+    transition: transform 0.3s ease-in-out
+
+  .header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 8px 16px
+
+    +desktop
+      display: none
+
+    h1
+      font-size: 20px
+      color: #212529
+      font-weight: 500
+
+    #btn-hide-sidebar
+      font-size: 18px
+      color: #5c5f62
+      border-radius: 50%
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      margin-left: 8px
+      width: 36px
+      height: 36px
+
+      &:hover
+        background-color: #eee
+
+  .body
+    padding: 16px
+    flex-grow: 1
+
+#backdrop
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  width: 100vw
+  height: 100vh
+  background-color: #000
+  opacity: 0
+  transition: opacity 0.3s
+
+  +desktop
+    display: none
+
+  &.visible
+    opacity: 0.5
+
+
+// Content
+// ----------------------------------------------------------------------------
+
+#content
+  padding: 16px 24px
+  flex-grow: 1
+
+  +desktop
+    padding: 16px
+
+
+// Helpers
+// ----------------------------------------------------------------------------
+
+.is-flex
+  display: flex
+
+.placeholder
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 2px dashed #ccc
+  border-radius: 5px
+  font-size: 16px
+  font-weight: 400
+  color: #212529
+  padding: 30px
+  height: 100%

@@ -6,11 +6,37 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'admin/base', 'data-turbo-track': 'reload' %>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <h1>Admin</h1>
-    <%= yield %>
+    <div id="container">
+      <div id="header">
+        <a href="#" id="btn-show-sidebar">
+          <i class="fas fa-bars"></i>
+        </a>
+        <h1>Piwam</h1>
+      </div>
+
+      <div class="is-flex">
+        <div id="sidebar">
+          <div class="header">
+            <h1>Piwam</h1>
+            <a href="#" id="btn-hide-sidebar">
+              <i class="fas fa-times"></i>
+            </a>
+          </div>
+
+          <div class="body">
+            <div class="placeholder">NAV</div>
+          </div>
+        </div>
+
+        <div id="content">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
