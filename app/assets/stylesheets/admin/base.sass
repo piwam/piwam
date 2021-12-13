@@ -10,7 +10,7 @@
   margin: 0 auto
 
   +desktop
-    max-width: 960px
+    max-width: 1024px
 
 // Header
 // ----------------------------------------------------------------------------
@@ -68,9 +68,10 @@
     position: static
     transform: translateX(0)
     transition: none
-    flex-basis: 260px
+    flex-basis: 280px
     flex-grow: 0
     flex-shrink: 0
+    padding-right: 30px
     border-right: none
 
   &.visible
@@ -164,11 +165,56 @@
     padding: 16px
 
 
+// Tables
+// ----------------------------------------------------------------------------
+
+.table
+  border: solid 1px #000
+  min-width: 80%
+  border-collapse: separate
+  margin: 16px 0
+
+  th
+    color: #fff
+    background-color: #000
+    text-align: center
+    font-weight: bold
+    padding: 0 4px
+    border-top: solid 2px #fff
+    border-right: solid 2px #fff
+    border-bottom: solid 2px #fff
+
+    &:first-child
+      border-left: solid 2px #fff
+
+    a
+      color: #fff
+      text-decoration: underline
+
+  td
+    padding: 0 4px
+    border-right: solid 2px #fff
+    border-bottom: solid 2px #fff
+
+    &:first-child
+      border-left: solid 2px #fff
+
+    a
+      color: #000
+      text-decoration: underline
+
+
 // Helpers
 // ----------------------------------------------------------------------------
 
 .is-flex
   display: flex
+
+.has-background-grey
+  background-color: #e5e0d0
+
+.has-text-centered
+  text-align: center !important
 
 .placeholder
   display: flex

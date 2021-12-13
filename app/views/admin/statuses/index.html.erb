@@ -2,18 +2,18 @@
 
 <h2>Status</h2>
 
-<table id="statuses">
+<table id="statuses" class="table">
   <thead>
     <tr>
-      <th>Label</th>
-      <th></th>
+      <th><%= link_to 'Label', '#' %></th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
     <% @statuses.each do |status| %>
       <tr id="<%= dom_id status %>">
         <td><%= status.label %></td>
-        <td><%= link_to 'Show', [:admin, status] %></td>
+        <td class="has-text-centered"><%= link_to 'Show', [:admin, status] %></td>
       </tr>
     <% end %>
   </tbody>
